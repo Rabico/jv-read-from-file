@@ -31,6 +31,9 @@ public class FileWork {
             }
         }
         String[] result = builder2.toString().split(" ");
+        if (result[0].isEmpty()) {
+            return new String[0];
+        }
         Arrays.sort(result);
         return result;
 
